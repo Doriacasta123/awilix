@@ -1,6 +1,6 @@
 class UserService {
     getUser() {
-        return { name: "John Doe", age: 30 };
+        return { name: "Juan", age: 30 };
     }
 }
 
