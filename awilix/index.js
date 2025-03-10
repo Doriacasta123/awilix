@@ -6,7 +6,6 @@ const UserController = require('./controllers/userController');
 const app = express();
 const container = createContainer();
 
-// Registro de servicios
 container.register({
     userService: asClass(UserService).scoped(),
     userController: asClass(UserController).scoped()
@@ -18,5 +17,5 @@ app.get('/user', (req, res) => {
 });
 
 app.listen(8080, () => {
-    console.log('Server running on http://localhost:3000');
+    console.log('Server running on http://localhost:8000');
 });
