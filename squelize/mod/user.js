@@ -1,6 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../database'); // Asegúrate de configurar tu conexión a la base de datos
-
+const sequelize = require('../database'); 
 class User extends Model {}
 
 User.init({
