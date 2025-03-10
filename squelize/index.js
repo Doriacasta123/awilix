@@ -10,13 +10,10 @@ const main = async () => {
     await sequelize.authenticate();
     console.log('Connection has been established successfully.');
 
-    // Sincronizar el modelo
     await sequelize.sync();
 
-    // Crear un nuevo usuario
-    await User.create({ name: 'Jane Doe', age: 25 });
+    await User.create({ name: 'Juan', age: 25 });
 
-    // Obtener todos los usuarios
     const users = await User.findAll();
     console.log(users);
 };
